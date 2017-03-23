@@ -25,7 +25,7 @@ void displayBar(double rms, int col){
 	int i;
 	for (i=0; i<rms/100; i++){
 //		gotoXY(i+3, col);// start displaying the bar from 3rd row and go down
-		gotoXY(28-i, col);
+		gotoXY(i+3, col);
 		setFGcolor(BLUE);
 #ifndef UNICODE
 		printf("*");
