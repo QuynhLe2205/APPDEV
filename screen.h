@@ -2,7 +2,7 @@
 enum COLOR{BLACK=30, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE}; //vt100 escape codes
 
 #define UNICODE
-#define BAR "\u266B"		// unicode for a bar
+#define BAR "\u2590"		// unicode for a bar
 
 // function prototypes
 void setFGcolor(int fg);

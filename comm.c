@@ -10,10 +10,9 @@ void send_data_curl(double Leq[]){
 	CURLcode res;
 	for(i=0; i<8; i++){	// this for loop prepare the post string
 		// in the sprintf function there is a ternary operator
-		sprintf(temp, (i==7)?"%.2f":"%.2f;", Leq[i]);
+		sprintf(temp, (i==7)?"%.2f":"%.2f,", Leq[i]);
 		strcat(postdata, temp);	// append temp to data
 	}
-	printf("%s\n", postdata);
 	// postdata is ready
 	curl_global_init(CURL_GLOBAL_ALL);
         curl = curl_easy_init();

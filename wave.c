@@ -94,7 +94,7 @@ void displayWAVdata(short int d[]){
 		}
 		rms200 = sqrt(sum200/(SAMPLE_RATE/80));
 		// find decibel value of sound using logrithm
-		rms200 = 20*log10(rms200);
+//		rms200 = 20*log10(rms200);
 		// please find maximum and minimum value of rms200
 		if(rms200 < min200) min200 = rms200;
 		if(rms200 > max200) max200 = rms200;

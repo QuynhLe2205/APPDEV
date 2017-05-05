@@ -23,9 +23,9 @@ void clearScreen(void){
 
 void displayBar(double rms, int col){
 	int i;
-	for (i=0; i<rms/100; i++){
+	for (i=0; i<rms/150; i++){
 //		gotoXY(i+3, col);// start displaying the bar from 3rd row and go down
-		gotoXY(i+3, col);
+		gotoXY(30-i, col);
 		setFGcolor(BLUE);
 #ifndef UNICODE
 		printf("*");
